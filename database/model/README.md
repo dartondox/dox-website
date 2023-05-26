@@ -130,12 +130,6 @@ await actor.save();
 Map<String, dynamic> actor = await Actor().find(1).toMap();
 ```
 
-#### To Json
-
-```dart
-String actor = await Actor().find(1).toJson();
-```
-
 #### Debug
 
 <pre class="language-dart"><code class="lang-dart">Actor actor = Actor();
