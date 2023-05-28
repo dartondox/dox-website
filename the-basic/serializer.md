@@ -9,7 +9,7 @@ description: >-
 #### Create a serializer
 
 ```bash
-$ dox create:request Blog
+$ dox create:serializer Blog
 ```
 
 #### Usage
