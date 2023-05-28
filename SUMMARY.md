@@ -10,6 +10,7 @@
 * [❄ Controller](the-basic/controller.md)
 * [❄ Middleware](the-basic/middleware.md)
 * [❄ Validation](the-basic/validation.md)
+* [❄ Serializer](the-basic/serializer.md)
 
 ## DATABASE
 
