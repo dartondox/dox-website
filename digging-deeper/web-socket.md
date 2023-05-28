@@ -1,17 +1,35 @@
 # ❄ Web Socket
 
-**Step 1**. Go to `bin/server.dart` and Register websocket in dox
+**Step 1.** Create a websocket router `websocket.dart` in `lib/routes` folder
 
 ```dart
-Dox dox = Dox();
+import 'package:dox_core/dox_core.dart';
+import 'package:dox_sample/http/controllers/socket.controller.dart';
 
-/// Add this Line before initialize
-dox.websocket(websocket: DoxWebsocket());
-
-dox.initialize(Config());
+class WebsocketRouter extends Router {
+  @override
+  register() {
+    var controller = SocketController();
+    
+    Router.websocket('ws', (socket) {
+      socket.on('intro', controller.intro);
+      socket.on('noti', controller.noti);
+    });
+  }
+}
 ```
 
-**Step 2.** Create a controller for web socket as below
+**Step 2**. Register `WebsocketRouter` into routers list in `config/app.dart`
+
+```dart
+List<Router> get routers => [
+    WebsocketRouter(),
+    WebRouter(), 
+    ApiRouter(), 
+];
+```
+
+**Step 3.** Create a controller for web socket
 
 ```dart
 import 'package:dox_core/dox_core.dart';
@@ -33,35 +51,8 @@ _Or create using dox-cli_
 $ dox create:controller SocketController -ws
 ```
 
-**Step 3.** Create a websocket router `websocket.dart` in `lib/routes` folder and add below codes
-
-```dart
-import 'package:dox_core/dox_core.dart';
-import 'package:dox_sample/http/controllers/socket.controller.dart';
-
-class WebsocketRouter extends Router {
-  @override
-  register() {
-    var controller = SocketController();
-
-    DoxWebsocket.on('intro', controller.intro);
-    DoxWebsocket.on('noti', controller.noti);
-  }
-}
-```
-
-**Step 4**. Register `WebsocketRouter` into routers list in `config/app.dart`
-
-```dart
-List<Router> get routers => [
-    WebsocketRouter()
-    WebRouter(), 
-    ApiRouter(), 
-];
-```
-
 {% hint style="info" %}
-Websocket url will be on `ws://127.0.0.1:{port}/ws`
+WebSocket url will be on `ws://127.0.0.1:{port}/ws`
 {% endhint %}
 
 {% hint style="info" %}
