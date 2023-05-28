@@ -136,6 +136,6 @@ req.cookie('authKey');
 HttpRequest ioReq = req.httpRequest;
 ```
 
-#### Custom Request
+#### Others
 
-Coming soon
+<table><thead><tr><th width="245">Function</th><th>Description</th></tr></thead><tbody><tr><td><code>req.userAgent()</code></td><td>Get user agent informatin</td></tr><tr><td><code>req.host()</code></td><td>Get host or domain</td></tr><tr><td><code>req.origin()</code></td><td>Get origin of the request</td></tr><tr><td><code>req.referer()</code></td><td>Get referer information from request</td></tr><tr><td><code>req.isFormData()</code></td><td>Check request is form-data</td></tr><tr><td><code>req.isJson()</code></td><td>Check request is json/application</td></tr></tbody></table>
