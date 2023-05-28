@@ -5,13 +5,12 @@
 ## The Basic
 
 * [❄ Route](the-basic/route.md)
-* [❄ Request](the-basic/request/README.md)
+* [❄ Request](the-basic/request.md)
   * [🟤 Custom Form Request](the-basic/request/custom-form-request.md)
 * [❄ Response](the-basic/response.md)
 * [❄ Controller](the-basic/controller.md)
 * [❄ Middleware](the-basic/middleware.md)
 * [❄ Validation](the-basic/validation.md)
-* [❄ Serializer](the-basic/serializer.md)
 
 ## DATABASE
 
@@ -22,6 +21,7 @@
     * [❄ HasMany](database/model/relationships/hasmany.md)
     * [❄ BelongsTo](database/model/relationships/belongsto.md)
     * [❄ ManyToMany](database/model/relationships/manytomany.md)
+  * [🟤 Serializer](database/model/serializer.md)
 * [❄ Query Builder](database/query-builder.md)
 
 ## Digging Deeper

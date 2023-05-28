@@ -4,7 +4,7 @@ description: >-
   custom response and then passed to HttpResponse.
 ---
 
-# ❄ Serializer
+# 🟤 Serializer
 
 #### Create a serializer
 
