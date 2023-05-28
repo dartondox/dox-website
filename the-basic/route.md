@@ -22,16 +22,28 @@ activate(DoxRequest req, String id) {
 }
 ```
 
-{% hint style="warning" %}
-_<mark style="color:yellow;">Please Make sure that you have added your param in the second argument of controller.</mark>_&#x20;
-{% endhint %}
-
 ### Group Route
 
+<pre class="language-dart"><code class="lang-dart"><strong>Route.group(prefix, () {
+</strong>    Route.get(path, controller);
+    Route.post(path, controller);
+});
+</code></pre>
+
+### Domain Route
+
+<pre class="language-dart"><code class="lang-dart"><strong>Route.domain('dartondox.com', () {
+</strong>    Route.get(path, controller);
+    Route.post(path, controller);
+});
+</code></pre>
+
+### Route Middleware
+
 ```dart
-Route.group(prefix, (route) {
-    route.get(path, controller);
-    route.post(path, controller);
+Route.middleware([CustomMiddleware()], () {
+    Route.get(path, controller);
+    Route.post(path, controller);
 });
 ```
 
