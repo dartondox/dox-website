@@ -115,3 +115,18 @@ request.validate({
 <strong>  'attachment': 'file:png,jpeg,pdf,docx',
 </strong>});
 </code></pre>
+
+#### Custom Message
+
+<pre class="language-dart"><code class="lang-dart">request.validate({
+    'title': 'required',
+    'email': 'required|email',
+  }, 
+<strong>  messages: {
+</strong><strong>    'required' : 'the {attribute} is required',
+</strong><strong>    'email' : 'the {value} is not valid email',
+</strong><strong>  },
+</strong>);
+</code></pre>
+
+<table><thead><tr><th width="215">Key</th><th>Description</th></tr></thead><tbody><tr><td><code>{attribute}</code></td><td>This will be replaced with field attribute.</td></tr><tr><td><code>{value}</code></td><td>This will be replace with field value.</td></tr></tbody></table>
