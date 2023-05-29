@@ -64,6 +64,6 @@ Finally use from controller
 </code></pre>
 
 You can now access title and description from controller with auto suggestion. \
-And validation rules that you assign in BlogRequest will be run automatically.\
+And validation rules that you assign in BlogRequest will be apply automatically.\
 
 
