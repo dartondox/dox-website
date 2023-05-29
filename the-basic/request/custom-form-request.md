@@ -1,4 +1,4 @@
-# 🟤 Custom Form Request
+# Custom Form Request
 
 #### Create a request
 
@@ -38,7 +38,7 @@ class BlogRequest extends FormRequest {
 Register `BlogRequest` in `lib/config/app.dart`&#x20;
 
 {% hint style="info" %}
-Since there is no way to create a class from string unless we use `dart:mirrors`, we need to register in `app.dart` . And dox will automatically pass this request  to controller.
+Since there is no way to create a class from string in dart unless we use `dart:mirrors`, we need to register your request class in `app.dart` . And dox will automatically pass this request  to controller.
 {% endhint %}
 
 <pre class="language-dart"><code class="lang-dart">@override
