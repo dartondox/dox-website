@@ -1,4 +1,4 @@
-# ❄ HasOne
+# HasOne
 
 ```dart
 @DoxModel()

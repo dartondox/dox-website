@@ -1,4 +1,4 @@
-# ❄ HasMany
+# HasMany
 
 ```dart
 @DoxModel()

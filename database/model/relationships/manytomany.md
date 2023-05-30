@@ -1,4 +1,4 @@
-# ❄ ManyToMany
+# ManyToMany
 
 ```dart
 @DoxModel()

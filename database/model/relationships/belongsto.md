@@ -4,7 +4,7 @@ description: >-
   comments. So each comment is belongs to specific blog.
 ---
 
-# ❄ BelongsTo
+# BelongsTo
 
 ```dart
 @DoxModel()
