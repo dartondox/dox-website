@@ -2,7 +2,7 @@
 
 * [Getting Started](README.md)
 
-## The Basic
+## 🔸 The Basic
 
 * [Route](the-basic/route.md)
 * [Request](the-basic/request.md)
@@ -12,7 +12,7 @@
 * [Middleware](the-basic/middleware.md)
 * [Validation](the-basic/validation.md)
 
-## DATABASE
+## 🔸 DATABASE
 
 * [Migration](database/migration.md)
 * [Model](database/model/README.md)
@@ -24,14 +24,14 @@
   * [Serializer](database/model/serializer.md)
 * [Query Builder](database/query-builder.md)
 
-## Digging Deeper
+## 🔸 Digging Deeper
 
 * [CORS](digging-deeper/cors.md)
 * [Web Socket](digging-deeper/web-socket.md)
 * [Dox CLI](digging-deeper/dox-cli.md)
 * [Deployment](digging-deeper/deployment.md)
 
-## Others
+## 🔸 Others
 
 * [Releases](others/releases.md)
 * [Community](others/community.md)
