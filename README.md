@@ -5,7 +5,7 @@ description: >-
   powerful and scalable web applications.
 ---
 
-# 🚀 Get Started
+# Getting Started
 
 ## Introduction
 
