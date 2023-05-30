@@ -4,7 +4,7 @@ description: >-
   migration. It support up and down methods to control migration version.
 ---
 
-# ❄ Dox CLI
+# ‣ Dox CLI
 
 ### Activate
 

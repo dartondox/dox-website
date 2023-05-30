@@ -1,4 +1,4 @@
-# ❄ Route
+# ‣ Route
 
 Routes can be found in `lib/routes` folder.\
 `api.dart` is with prefix `api`

@@ -1,4 +1,4 @@
-# ❄ Model
+# ‣ Model
 
 #### Create a new model
 

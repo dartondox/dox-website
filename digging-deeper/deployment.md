@@ -1,4 +1,4 @@
-# 🚀 Deployment
+# ‣ Deployment
 
 #### To compile dart into machine code
 

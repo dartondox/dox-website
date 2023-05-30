@@ -4,7 +4,7 @@ description: >-
   data.
 ---
 
-# ❄ Validation
+# ‣ Validation
 
 ### Example Usage
 

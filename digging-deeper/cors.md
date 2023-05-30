@@ -2,7 +2,7 @@
 description: Cross-Origin Resource Sharing
 ---
 
-# ❄ CORS
+# ‣ CORS
 
 CORS configuration can be found in `lib/config/app.dart`
 

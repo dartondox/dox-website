@@ -1,4 +1,4 @@
-# ❄ Web Socket
+# ‣ Web Socket
 
 **Step 1.** Create a websocket router `websocket.dart` in `lib/routes` folder
 

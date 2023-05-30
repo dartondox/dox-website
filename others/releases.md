@@ -1,4 +1,4 @@
-# ❄ Releases
+# ‣ Releases
 
 ## 28-May-2023 \[<mark style="color:yellow;">**1.0.0-alpha.2**</mark>]
 

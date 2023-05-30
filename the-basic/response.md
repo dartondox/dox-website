@@ -1,4 +1,4 @@
-# ❄ Response
+# ‣ Response
 
 ```dart
 import 'package:dox_core/dox_core.dart';

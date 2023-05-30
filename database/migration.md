@@ -1,4 +1,4 @@
-# ❄ Migration
+# ‣ Migration
 
 #### Create a migration
 

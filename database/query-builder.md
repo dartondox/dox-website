@@ -1,4 +1,4 @@
-# ❄ Query Builder
+# ‣ Query Builder
 
 {% hint style="info" %}
 Easy query builder to do CRUD operations.
