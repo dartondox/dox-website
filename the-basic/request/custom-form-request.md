@@ -1,4 +1,4 @@
-# ♦ Custom Form Request
+# Custom Form Request
 
 #### Create a request
 

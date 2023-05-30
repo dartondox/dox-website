@@ -1,4 +1,4 @@
-# ♦ Relationships
+# Relationships
 
 ### HasOne
 
