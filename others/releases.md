@@ -1,5 +1,16 @@
 # ❄ Releases
 
+## 28-May-2023 \[<mark style="color:yellow;">**1.0.0-alpha.2**</mark>]
+
+* Support Domain routing and improvement on routes
+* Support multiple web socket path
+* Support custom form request
+
+## 23-May-2023 \[<mark style="color:yellow;">**1.0.0-alpha.1**</mark>]
+
+* Support validation on form request
+* Support form data request
+
 ## 20-May-2023 \[<mark style="color:yellow;">**1.0.0-alpha.0**</mark>]
 
 * Added support for global middleware
