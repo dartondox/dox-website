@@ -1,6 +1,6 @@
 # Releases
 
-## 04-June-2023 \[<mark style="color:yellow;">**1.0.0**</mark>]
+## xx-June-2023 \[<mark style="color:yellow;">**1.0.0**</mark>]
 
 * First stable release is coming Soon
 
