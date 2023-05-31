@@ -24,9 +24,14 @@
   * [Serializer](database/model/serializer.md)
 * [Query Builder](database/query-builder.md)
 
+## Security
+
+* [CORS](security/cors.md)
+* [Encryption](security/encryption.md)
+* [Hashing](security/hashing.md)
+
 ## Digging Deeper
 
-* [CORS](digging-deeper/cors.md)
 * [Web Socket](digging-deeper/web-socket.md)
 * [Dox CLI](digging-deeper/dox-cli.md)
 * [Deployment](digging-deeper/deployment.md)
