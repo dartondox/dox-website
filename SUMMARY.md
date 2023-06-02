@@ -35,6 +35,7 @@
 * [Web Socket](digging-deeper/web-socket.md)
 * [Dox CLI](digging-deeper/dox-cli.md)
 * [Deployment](digging-deeper/deployment.md)
+* [Testing](digging-deeper/testing.md)
 
 ## Others
 
