@@ -33,9 +33,13 @@ $ cp .env.example .env (and modify .env variables)
 $ dox serve or dox s to start http server
 ```
 
-{% hint style="warning" %}
-Dox framework is currently in alpha state. We will announce fix date for stable release soon. Please join [our discord server](https://discord.gg/tfN9Zs9cxu) for more information.
+{% hint style="info" %}
+Please make sure you have included bin path to your profile. If you did not added path to your profile yet, open `~/.bashrc` or `~/.zshrc` and paste below line.
 {% endhint %}
+
+```dart
+export PATH="$PATH":"~/.pub-cache/bin"
+```
 
 {% hint style="info" %}
 If you found any issues or have any suggestion, feel free to create an issue [here](https://github.com/necessarylion/dox-core/issues/new).&#x20;
