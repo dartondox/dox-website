@@ -26,6 +26,7 @@
 
 ## Security
 
+* [Authentication](security/authentication.md)
 * [CORS](security/cors.md)
 * [Encryption](security/encryption.md)
 * [Hashing](security/hashing.md)
