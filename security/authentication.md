@@ -1,9 +1,3 @@
----
-description: >-
-  With Dox Auth package, you can create authentication with json web token(JWT)
-  driver.
----
-
 # Authentication
 
 ### Installation
