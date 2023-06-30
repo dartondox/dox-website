@@ -56,7 +56,24 @@ await dox.initialize(config);
 </strong>User? user = auth.user&#x3C;User>();
 </code></pre>
 
-4. Verify Logged In or Fetch User information
+4. Register `doxAuthMiddleware` in route
+
+<pre class="language-dart"><code class="lang-dart"> Route.get('/auth/user', &#x3C;dynamic>[
+<strong>  doxAuthMiddleware, 
+</strong>  authController.user
+ ]);
+</code></pre>
+
+{% hint style="info" %}
+You can also register in global middleware.
+
+```dart
+@override
+List<dynamic> get middleware => <dynamic>[doxAuthMiddleware];
+```
+{% endhint %}
+
+5. Verify Logged In or Fetch User information
 
 <pre class="language-dart"><code class="lang-dart">Future&#x3C;dynamic> fetchUser(DoxRequest req) async {
 <strong>  Auth? auth = req.auth&#x3C;Auth>();

@@ -1,4 +1,4 @@
-# ‣ Route
+# Route
 
 Routes can be found in `lib/routes` folder.\
 `api.dart` is with prefix `api`
@@ -7,7 +7,7 @@ Routes can be found in `lib/routes` folder.\
 
 <table><thead><tr><th width="145">Method</th><th>Function</th></tr></thead><tbody><tr><td>GET</td><td><code>Route.get(routeName, controller.method)</code></td></tr><tr><td>POST</td><td><code>Route.post(path, controller.method)</code></td></tr><tr><td>PUT</td><td><code>Route.put(path, controller.method)</code></td></tr><tr><td>PATCH</td><td><code>Route.patch(path, controller.method)</code></td></tr><tr><td>DELETE</td><td><code>Route.delete(path, controller.method)</code></td></tr><tr><td>COPY</td><td><code>Route.copy(path, controller.method)</code></td></tr><tr><td>HEAD</td><td><code>Route.head(path, controller.method)</code></td></tr><tr><td>OPTIONS</td><td><code>Route.options(path, controller.method)</code></td></tr><tr><td>LINK</td><td><code>Route.link(path, controller.method)</code></td></tr><tr><td>UNLINK</td><td><code>Route.unlink(path, controller.method)</code></td></tr><tr><td>PURGE</td><td><code>Route.purge(path, controller.method)</code></td></tr><tr><td>LOCK</td><td><code>Route.lock(path, controller.method)</code></td></tr><tr><td>UNLOCK</td><td><code>Route.unlock(path, controller.method)</code></td></tr><tr><td>VIEW</td><td><code>Route.view(path, controller.method)</code></td></tr></tbody></table>
 
-#### Route Param
+### Route Param
 
 ```dart
 Route.get('/blog/{id}', info);
@@ -22,7 +22,7 @@ activate(DoxRequest req, String id) {
 }
 ```
 
-#### Group Route
+### Group Route
 
 <pre class="language-dart"><code class="lang-dart"><strong>Route.group(prefix, () {
 </strong>    Route.get(path, controller);
@@ -30,7 +30,7 @@ activate(DoxRequest req, String id) {
 });
 </code></pre>
 
-#### Domain Route
+### Domain Route
 
 <pre class="language-dart"><code class="lang-dart"><strong>Route.domain('dartondox.com', () {
 </strong>    Route.get(path, controller);
@@ -38,7 +38,7 @@ activate(DoxRequest req, String id) {
 });
 </code></pre>
 
-#### Route Middleware
+### Route Middleware
 
 ```dart
 Route.middleware([CustomMiddleware()], () {
@@ -47,7 +47,7 @@ Route.middleware([CustomMiddleware()], () {
 });
 ```
 
-#### WebSocket Route
+### WebSocket Route
 
 ```dart
 Router.websocket('ws', (socket) {
@@ -56,7 +56,7 @@ Router.websocket('ws', (socket) {
 });
 ```
 
-#### Resource Route
+### Resource Route
 
 ```dart
 Route.resource('blogs', BlogController());
@@ -66,13 +66,13 @@ Route.resource('blogs', BlogController());
 
 ### Usage
 
-Use as callback function
+### Callback
 
 ```dart
 Route.get('/ping', (DoxRequest req) => 'pong');
 ```
 
-Use With controller
+### &#x20;Controller
 
 ```dart
 class WebController {
@@ -87,7 +87,7 @@ Route.get('ping', webcontroller.pong);
 Route.get('ping', [webcontroller.pong]);
 ```
 
-Add class based middleware to route
+### Class based middleware
 
 ```dart
 class LoggerMiddleware extends DoxMiddleware {
@@ -102,7 +102,7 @@ var loggerMiddleware = LoggerMiddleware();
 Route.get('ping', [loggerMiddleware, webcontroller.pong]);
 ```
 
-Add function middleware to route
+### Function middleware
 
 ```dart
 authMiddleware(DoxRequest req) {
@@ -112,7 +112,7 @@ authMiddleware(DoxRequest req) {
 Route.get('ping', [authMiddleware, webcontroller.pong]);art
 ```
 
-Add Multiple middleware to route
+### Multiple middleware
 
 ```dart
 Route.get('ping', [
