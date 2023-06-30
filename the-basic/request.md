@@ -1,6 +1,6 @@
 # Request
 
-### Request body
+## Request body
 
 <pre class="language-dart"><code class="lang-dart">/// req.body
 
@@ -12,7 +12,7 @@ class ApiController {
 }
 </code></pre>
 
-### Param
+## Param
 
 <pre class="language-dart"><code class="lang-dart">/// req.param
 
@@ -25,7 +25,7 @@ class ApiController {
 }
 </code></pre>
 
-### Form Data File
+## Form Data File
 
 ```dart
 class ApiController {
@@ -42,43 +42,43 @@ class ApiController {
 }
 ```
 
-### Functions
+## Functions
 
-#### `req.query`
+### `req.query`
 
 ```dart
 /// if url is https://example.com?name=John
 String name = req.query['name']
 ```
 
-#### `req.input()`
+### `req.input()`
 
 ```dart
 /// you can get body and query values with input()
 String name = req.input('name');
 ```
 
-#### `req.only()`
+### `req.only()`
 
 ```dart
 Map<String, dynamic> params = req.only(['email', 'name']);
 ```
 
-#### `req.ip()`
+### `req.ip()`
 
 ```dart
 // get user IP address
 String ip = req.ip(); 
 ```
 
-#### `req.header()`
+### `req.header()`
 
 ```dart
 // get header value
 String authToken = req.header('Authorization') 
 ```
 
-#### `req.has()`
+### `req.has()`
 
 ```dart
 if(req.has('email')) {
@@ -86,14 +86,14 @@ if(req.has('email')) {
 }
 ```
 
-#### `req.all()`
+### `req.all()`
 
 ```dart
 /// req.all() will combine query and body inputs
 Map<String, dynamic> inputs = req.all();
 ```
 
-### Add extra key to request&#x20;
+## Add extra key to request&#x20;
 
 ```dart
 /// this is useful when you want to add extra param 
@@ -107,7 +107,7 @@ Or you can also merge multiple extra key to request
 req.merge({"foo" : bar, "kit" : kat});
 ```
 
-### Request Method
+## Request Method
 
 <pre class="language-dart"><code class="lang-dart">class ApiController {
   showMethod(DoxRequest req) {
@@ -116,13 +116,13 @@ req.merge({"foo" : bar, "kit" : kat});
 }
 </code></pre>
 
-### Get Cookie
+## Get Cookie
 
 ```dart
 req.cookie('authKey');
 ```
 
-### Request URI
+## Request URI
 
 <pre class="language-dart"><code class="lang-dart">class ApiController {
   showUriPath(DoxRequest req) {
@@ -132,12 +132,12 @@ req.cookie('authKey');
 }
 </code></pre>
 
-#### Get original HttpRequest from dart:io
+### Original HttpRequest (dart:io)
 
 ```dart
 HttpRequest ioReq = req.httpRequest;
 ```
 
-### Others
+## Others
 
 <table><thead><tr><th width="245">Function</th><th>Description</th></tr></thead><tbody><tr><td><code>req.userAgent()</code></td><td>Get user agent informatin</td></tr><tr><td><code>req.host()</code></td><td>Get host or domain</td></tr><tr><td><code>req.origin()</code></td><td>Get origin of the request</td></tr><tr><td><code>req.referer()</code></td><td>Get referer information from request</td></tr><tr><td><code>req.isFormData()</code></td><td>Check request is form-data</td></tr><tr><td><code>req.isJson()</code></td><td>Check request is json/application</td></tr></tbody></table>
