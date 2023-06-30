@@ -4,9 +4,9 @@ description: >-
   migration. It support up and down methods to control migration version.
 ---
 
-# ‣ Dox CLI
+# Dox CLI
 
-### Activate
+## Activate
 
 ```bash
 $ dart pub global activate dox
@@ -20,21 +20,21 @@ Please make sure you have included bin path to your profile. If you did not adde
 export PATH="$PATH":"~/.pub-cache/bin"
 ```
 
-### Update dox
+## Update dox
 
 ```
 $ dox update
 ```
 
-### **Commands**
+## **Commands**
 
-#### Create Project
+### Create Project
 
 ```
 $ dox create new_blog
 ```
 
-**Serve Project**
+### **Serve Project**
 
 ```
 $ dox serve 
@@ -44,27 +44,27 @@ $ dox s
 $ dox s --ignore-build-runner // ignore build runner watch
 ```
 
-**Run build runner**
+### **Run build runner**
 
 ```
 $ dox build_runner:watch
 $ dox build_runner:build
 ```
 
-**Build project for production**
+### **Build project for production**
 
 ```
 $ dox build (compile into machine code)
 $ bin/dox (run exec file to serve http server)
 ```
 
-#### Generate app key
+### Generate app key
 
 ```
 $ dox key:generate
 ```
 
-#### Create controller
+### Create controller
 
 ```
 $ dox create:controller admin_controller
@@ -82,31 +82,31 @@ $ dox create:controller admin_controller -r
 $ dox create:controller socket_controller -ws
 ```
 
-#### Create Middleware
+### Create Middleware
 
 ```
 $ dox create:middleware auth_middleware
 ```
 
-**Create migration**
+### **Create migration**
 
 ```
 $ dox create:migration create_foo_table
 ```
 
-**Create model**
+### **Create model**
 
 ```
 $ dox create:model ModelName
 ```
 
-**Create model with migration**
+### **Create model with migration**
 
 ```
 $ dox create:model User -m
 ```
 
-**Run migration**
+### **Run migration**
 
 ```
 $ dox migrate
@@ -124,7 +124,7 @@ DB_USERNAME=admin
 DB_PASSWORD=password
 ```
 
-**Rollback migration**
+### **Rollback migration**
 
 ```
 $ dox migrate:rollback

@@ -1,5 +1,7 @@
 # Model
 
+## Basic
+
 <pre><code><strong>$ dox create:model Blog
 </strong>$ dart run build_runner build
 </code></pre>

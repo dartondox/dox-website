@@ -1,12 +1,12 @@
 # Deployment
 
-#### To compile dart into machine code
+### To compile dart into machine code
 
 ```
 $ dox build 
 ```
 
-#### And finally serve the app
+### Serve the app
 
 ```
 $ bin/server

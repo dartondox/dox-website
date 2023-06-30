@@ -1,10 +1,10 @@
-# ‣ Query Builder
+# Query Builder
 
 {% hint style="info" %}
 Easy query builder to do CRUD operations.
 {% endhint %}
 
-#### Insert or create
+### Insert or create
 
 ```dart
 // single entry
@@ -23,7 +23,7 @@ await Actor().insertMultiple([
 ]);
 ```
 
-#### Update
+### Update
 
 ```dart
 await Actor()
@@ -35,7 +35,7 @@ await Actor()
   });
 ```
 
-#### Count
+### Count
 
 ```dart
 await Actor().count();
@@ -43,7 +43,7 @@ await Actor().count();
 await Actor().where('age', '>=' , 23).count();
 ```
 
-#### Find
+### Find
 
 ```dart
 await Actor().find(id); // find by id
@@ -51,13 +51,13 @@ await Actor().find(id); // find by id
 await Actor().find('name', 'John Wick');
 ```
 
-#### Get First
+### Get First
 
 ```dart
 Actor actor = await Actor().getFirst(); // limit 1
 ```
 
-#### All
+### All
 
 ```dart
 List<Actor> actors = await Actor().all();
@@ -66,7 +66,7 @@ for(Actor actor in actors) {
 }
 ```
 
-#### Get
+### Get
 
 ```dart
 List<Actor> actors = await Actor().where('name', 'John Wick').get();
@@ -75,26 +75,26 @@ for(Actor actor in actors) {
 }
 ```
 
-#### To SQL
+### To SQL
 
 ```dart
 String query = Actor().where('name', 'John Wick').toSql();
 print(query)
 ```
 
-#### Delete
+### Delete
 
 ```dart
 await Actor().where('name', 'John Wick').delete();
 ```
 
-#### Force delete (only with SoftDeletes)
+### Force delete (only with SoftDeletes)
 
 ```dart
 await Actor().where('name', 'John Wick').forceDelete();
 ```
 
-#### With Trash (only with SoftDeletes)
+### With Trash (only with SoftDeletes)
 
 ```dart
 List actors = await Actor().where('name', 'John Wick').withTrash().get();
@@ -103,7 +103,7 @@ for(Actor actor in actors) {
 }
 ```
 
-#### Select
+### Select
 
 ```dart
 await Actor()
@@ -118,13 +118,13 @@ await Actor()
   .select('id, name, age').where('name', 'John Wick').get();
 ```
 
-#### Where In
+### Where In
 
 ```dart
 await Actor().whereIn('id', ['1', '2']).get();
 ```
 
-#### Where
+### Where
 
 ```dart
 // equal condition between column and value
@@ -135,7 +135,7 @@ await Actor().where('name', '=', 'John Wick').get();
 await Actor().where('age', '>=', 23).get();
 ```
 
-#### Or where
+### Or where
 
 ```dart
 // equal condition between column and value
@@ -146,26 +146,26 @@ await Actor().orWhere('name', '=', 'John Wick').get();
 await Actor().orWhere('age', '>=', 23).get();
 ```
 
-#### Where raw
+### Where raw
 
 ```dart
 await Actor().whereRaw('name = @name', {'name', 'John Wick'}).get();
 ```
 
-#### Or where raw
+### Or where raw
 
 ```dart
 await Actor().orWhereRaw('name = @name', {'name', 'John Wick'}).get();
 ```
 
-#### Chain where and or where
+### Chain where and or where
 
 ```dart
 await Actor()
   .where('name', 'John Doe').orWhere('name', 'John Wick').get();
 ```
 
-#### Limit or take
+### Limit or take
 
 ```dart
 await Actor().limit(10).get();
@@ -173,20 +173,20 @@ await Actor().limit(10).get();
 await Actor().take(10).get();
 ```
 
-#### Offset
+### Offset
 
 ```dart
 await Actor().limit(10).offset(10).get();
 ```
 
-#### Group by
+### Group by
 
 ```dart
 await Actor()
   .select('count(*) as total, name').groupBy('name').get();
 ```
 
-#### Order by
+### Order by
 
 ```dart
 
@@ -206,7 +206,7 @@ await Actor()
   .get();
 ```
 
-#### Join
+### Join
 
 ```dart
 await Actor()
@@ -214,7 +214,7 @@ await Actor()
     .get();
 ```
 
-#### Left join
+### Left join
 
 ```dart
 await Actor()
@@ -222,7 +222,7 @@ await Actor()
     .get();
 ```
 
-#### Right join
+### Right join
 
 ```dart
 await Actor()
@@ -230,7 +230,7 @@ await Actor()
     .get();
 ```
 
-#### Join raw
+### Join raw
 
 ```dart
 await Actor()
@@ -238,7 +238,7 @@ await Actor()
     .get();
 ```
 
-#### Left join raw
+### Left join raw
 
 ```dart
 await Actor()
@@ -246,7 +246,7 @@ await Actor()
     .get();
 ```
 
-#### Right join raw
+### Right join raw
 
 ```dart
 await Actor()
@@ -254,7 +254,7 @@ await Actor()
     .get();
 ```
 
-#### Debug
+### Debug
 
 ```dart
 await Actor().debug(true).all();

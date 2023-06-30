@@ -1,5 +1,7 @@
 # Migration
 
+## Basic
+
 ```bash
 $ dox create:migration create_blog_table
 ```

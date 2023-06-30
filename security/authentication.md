@@ -1,6 +1,6 @@
 # Authentication
 
-### Installation
+## Installation
 
 <pre class="language-yaml"><code class="lang-yaml">dependencies:
   ...
@@ -13,7 +13,7 @@ or
 dart pub add dox_auth
 ```
 
-### Usage
+## Usage
 
 1. Create auth config `lib/config/auth.dart`
 
@@ -84,7 +84,9 @@ List<dynamic> get middleware => <dynamic>[doxAuthMiddleware];
 }
 </code></pre>
 
-#### Expired In&#x20;
+## Configuration
+
+### Expired In&#x20;
 
 ```dart
 JwtDriver(
@@ -93,7 +95,7 @@ JwtDriver(
 ),
 ```
 
-#### Issuer&#x20;
+### Issuer&#x20;
 
 ```dart
 JwtDriver(
@@ -102,7 +104,7 @@ JwtDriver(
 ),
 ```
 
-#### Algorithm&#x20;
+### Algorithm&#x20;
 
 ```dart
 JwtDriver(

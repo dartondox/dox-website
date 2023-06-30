@@ -1,4 +1,6 @@
-# ‣ Web Socket
+# Web Socket
+
+### **Basic**
 
 **Step 1.** Create a websocket router `websocket.dart` in `lib/routes` folder
 
@@ -64,7 +66,7 @@ For Handling in client browser, we suggest you to use this library.\
 Note: You can also use built in browser `WebSocket` or any client WebSocket library. All you need to follow is when you send data, it must be a json string with `event`, and `message` attribute. See example below.
 {% endhint %}
 
-#### Example using `dart:io WebSocket`
+### Example using `dart:io WebSocket`
 
 <pre class="language-dart"><code class="lang-dart">import 'dart:io';
 
