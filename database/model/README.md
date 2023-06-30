@@ -1,6 +1,6 @@
 # Model
 
-## Basic
+### Creation
 
 <pre><code><strong>$ dox create:model Blog
 </strong>$ dart run build_runner build
