@@ -1,6 +1,4 @@
-# ‣ Migration
-
-#### Create a migration
+# Migration
 
 ```bash
 $ dox create:migration create_blog_table
@@ -10,7 +8,7 @@ $ dox create:migration create_blog_table
 This will generate a migration file inside db/migration folder, where you can update your schema to create, update and drop table.
 {% endhint %}
 
-**To create new table**
+### **Create new table**
 
 {% hint style="warning" %}
 Dox follow **singular** table name. You can still use custom table name in your model. For more information [check here](model/#table-name).
@@ -26,7 +24,7 @@ Schema.create('blog', (Table table) {
 });
 ```
 
-#### To update database table
+### Update table
 
 ```dart
 await Schema.table('blog', (Table table) {
@@ -50,7 +48,7 @@ await Schema.table('blog', (Table table) {
 });
 ```
 
-#### To drop or delete table
+### Drop/delete table
 
 ```dart
 Schema.drop('blog');
@@ -80,7 +78,7 @@ Schema.drop('blog');
 | `table.softDeletes()`             | Adds **deleted\_at** column                          |
 | `table.timestamps()`              | Adds **created\_at** and **updated\_at** columns     |
 
-#### Drop column
+### Drop column
 
 ```dart
 await Schema.table('blog', (Table table) {
@@ -88,7 +86,7 @@ await Schema.table('blog', (Table table) {
 });
 ```
 
-#### Rename column
+### Rename column
 
 ```dart
 await Schema.table('blog', (Table table) {
@@ -96,7 +94,7 @@ await Schema.table('blog', (Table table) {
 });
 ```
 
-**Run migration**
+### **Run migration**
 
 ```
 $ dox migrate
@@ -114,7 +112,7 @@ DB_USERNAME=admin
 DB_PASSWORD=password
 ```
 
-**Rollback migration**
+### **Rollback migration**
 
 ```
 $ dox migrate:rollback

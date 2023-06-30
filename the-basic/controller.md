@@ -1,6 +1,6 @@
-# ‣ Controller
+# Controller
 
-#### Create a controller
+### Create a controller
 
 ```dart
 $ dox create:controller Blog
@@ -16,7 +16,7 @@ class BlogController {
 }
 ```
 
-#### Create a resource controller
+### Create a resource controller
 
 ```dart
 $ dox create:controller Blog -r

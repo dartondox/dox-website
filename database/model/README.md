@@ -1,12 +1,10 @@
-# ‣ Model
-
-#### Create a new model
+# Model
 
 <pre><code><strong>$ dox create:model Blog
 </strong>$ dart run build_runner build
 </code></pre>
 
-#### Create model with migration
+#### with migration
 
 <pre><code><strong>$ dox create:model Blog -m
 </strong>$ dart run build_runner build
@@ -72,7 +70,7 @@ $ dart run build_runner watch
 @DoxModel(createdAt: 'created_at', updatedAt: 'updated_at')
 ```
 
-#### Column
+### Column
 
 ```dart
 @DoxModel()
@@ -107,15 +105,17 @@ class Blog extends BlogGenerator {
 Model class.
 {% endhint %}
 
-#### Soft Deletes
+## Usage
 
-<pre class="language-dart"><code class="lang-dart">@DoxModel()
-<strong>class Blog extends BlogGenerator with SoftDeletes {
+### Soft Deletes
+
+<pre class="language-dart"><code class="lang-dart">@DoxModel(softDelete: true)
+<strong>class Blog extends BlogGenerator {
 </strong> // columns here
 }
 </code></pre>
 
-#### Save
+### Save
 
 ```dart
 Actor actor = Actor();
@@ -124,13 +124,13 @@ actor.age = 60;
 await actor.save();
 ```
 
-#### To Map
+### To Map
 
 ```dart
 Map<String, dynamic> actor = await Actor().find(1).toMap();
 ```
 
-#### Debug
+### Debug
 
 <pre class="language-dart"><code class="lang-dart">Actor actor = Actor();
 actor.name = 'John Wick';
@@ -139,7 +139,7 @@ actor.age = 60;
 </strong>await actor.save();
 </code></pre>
 
-#### Reset query and create new one
+### Reset query and create new one
 
 {% hint style="info" %}
 If you do not want to create new class and reuse existing class to do new query, use can use `newQuery` attribute.
@@ -155,7 +155,7 @@ List&#x3C;Blog> blogs = await blog.where('status', 'active')
 </strong>    .where('status', 'deleted').where('user', 'normal').get();
 </code></pre>
 
-#### Hidden columns to response
+### Hidden columns to response
 
 <pre class="language-dart"><code class="lang-dart">@DoxModel()
 class User extends UserGenerator {

@@ -1,12 +1,12 @@
 # Custom Form Request
 
-#### Create a request
+### Create a request
 
 ```bash
 $ dox create:request Blog
 ```
 
-#### Usage
+### Usage
 
 ```dart
 import 'package:dox_core/dox_core.dart';
