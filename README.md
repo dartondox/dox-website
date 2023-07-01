@@ -17,13 +17,13 @@ But that's not all - our framework also includes a powerful CLI (Command-Line In
 
 Overall, our **Dox** - dart web framework is the ultimate solution for developers looking to build high-quality web applications with ease. So why wait? Try it out now and experience the power and flexibility of our framework for yourself!
 
-#### Install Dox CLI
+## Installation
 
 ```
 $ dart pub global activate dox
 ```
 
-#### Create new project using dox-cli
+## Create new project
 
 ```
 $ dox create new_blog
